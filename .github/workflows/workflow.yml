@@ -20,8 +20,8 @@ jobs:
           echo "----------------------------------------"
           echo "Accessing environment variables using env context"
           echo "${{ env.WORKSPACE_ENVIRONMENT_VARIABLE }}"
-          echo "{{ env.JOB_ENVIRONMENT_VARIABLE }}"
-          echo "{{ env.STEP_ENVIRONMENT_VARIABLE }} not defined"
+          echo "${{ env.JOB_ENVIRONMENT_VARIABLE }}"
+          echo "${{ env.STEP_ENVIRONMENT_VARIABLE }} not defined"
   windows:
     env:
       JOB_ENVIRONMENT_VARIABLE: 'custom job environment for windows'
